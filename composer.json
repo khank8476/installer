@@ -1,0 +1,25 @@
+{
+    "name": "kamrankhandev/installer",
+    "description": "software installer",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kamrankhandev\\Installer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kamrankhandev"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kamrankhandev\\Installer\\InstallerServiceProvider"
+            ]
+        }
+    }
+}
