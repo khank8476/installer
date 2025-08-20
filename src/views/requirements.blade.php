@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Installer - {{config('app.name')}}</title>
-    <link rel="shortcut icon" href="{{url('assets/images/logo-bag-transparent.png')}}" type="image/x-icon">
+    <title>Installer - {{config('info.software.name')}}</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
     <!-- Icons -->
-    <link rel="stylesheet" type="text/css" href="{{url('assets/css/vendors/font-awesome.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/fontawesome.min.css" />
     <!-- Bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="{{url('assets/css/vendors/bootstrap.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 </head>
 
 <body class="d-flex flex-column">
@@ -127,10 +127,8 @@
             </div>
         </div>
     </div>
-    <!-- latest jquery-->
-    <script src="{{url('assets/js/jquery-3.3.1.min.js')}}"></script>
     <!-- Bootstrap js-->
-    <script src="{{url('assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
