@@ -153,6 +153,7 @@ class InstallerController
     {
         try {
             Artisan::call('migrate', ['--force' => true]);
+            Artisan::call('db:seed', ['--force' => true]);
             return true;
         } catch (\Exception $e) {
             return $e->getMessage();
